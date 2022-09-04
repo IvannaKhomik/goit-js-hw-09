@@ -1,0 +1,31 @@
+{
+  "name": "goit-js-hw-09",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /goit-js-hw-09/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvannaKhomik/goit-js-hw-09.git"
+  },
+  "author": "Ivanna Khomik <ivanna.khomik@gmail.com>",
+  "license": "ISC",
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/IvannaKhomik/goit-js-hw-09/issues"
+  },
+  "homepage": "https://ivannakhomik.github.io/goit-js-hw-09",
+  "dependencies": {
+    "flatpickr": "^4.6.13",
+    "modern-normalize": "^1.1.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}

@@ -13,6 +13,8 @@ const timerSecondsSpan = document.querySelector('span[data-seconds]');
 
 btn.addEventListener('click', startTimer);
 
+btn.setAttribute('disabled', 'disabled');
+
 const options = {
   enableTime: true,
   time_24hr: true,
@@ -21,14 +23,15 @@ const options = {
   onClose(selectedDates) {
     const currentDate = Date.now();
     const choosingDate = selectedDates[0].getTime();
-    btn.setAttribute('disabled', '');
     if (choosingDate <= currentDate) {
       Notify.failure('Please choose a date in the future', {
         timeout: 3000,
         clickToClose: true,
       });
+      btn.setAttribute('disabled', 'disabled');
+    } else {
+      btn.removeAttribute('disabled', 'disabled');
     }
-    btn.removeAttribute('disabled', '');
   },
 };
 

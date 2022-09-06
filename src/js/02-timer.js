@@ -23,7 +23,6 @@ const options = {
     const choosingDate = selectedDates[0].getTime();
     btn.setAttribute('disabled', '');
     if (choosingDate <= currentDate) {
-      // return window.alert('Please choose a date in the future');
       Notify.failure('Please choose a date in the future', {
         timeout: 3000,
         clickToClose: true,
